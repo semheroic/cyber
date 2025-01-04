@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Button Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="GameContainer" id="demo">
+        <p style="font-size: 30px; margin-left: 40px; margin-top: 90px;" id="result"></p>
+</div>
+<div class="line"></div>
+  <div class="controlers">
+    <p> Select Color your want</p>
+    <select onchange="changecolor()" id="change" dropzone="UP">
+        <option value="choose color"> choose color</option>
+        <option value="red"> RED</option>
+        <option value="blue"> blue</option>
+        <option value="yellow"> yellow</option>
+        <option value="violet"> violet</option>
+        <option value="black"> black</option>
+    </select>
+    <br><br> <br>
+    <p> CLICK THE BUTTON TO SEE THE GAME OWER</p>
+    <button onclick="see()">  SEE GAME OWNER </button>
+  </div>
+   <div class="adress">
+    <h4> IF YOU ENJOY OUR GAME</h4>
+    <div class="content">
+         PH:0798367330<br><br>
+         Email:Himbazasemu23@gmail.com
+    </div>
+
+   </div>
+   </div>
+    <script>
+        function changecolor(){
+            let a=document.getElementById("change").value;
+            document.getElementById("demo").style.backgroundColor=a;
+            alert("Your Color IS"+" :"+  a);   
+        }
+        function see(){
+            alert(" HEROIC IS THE GAME OWNER");
+        }
+
+    </script>
+</body>
+</html>
